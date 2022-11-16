@@ -1,1 +1,19 @@
-<p>emp works!</p>
+<h1 class="text-center mt-3">Dolgozók</h1>
+<div class="container table-center">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Név</th>
+                <th>Település</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
